@@ -43,7 +43,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsHolder> {
         holder.dTvUrlToImage.setText(currentArticle.urlToImage);
         holder.dTvPublishedAt.setText(currentArticle.publishedAt);
         holder.dTvContent.setText(currentArticle.content);
-//        holder.dTvSource.setText(currentArticle.source);
     }
 
     @Override
@@ -60,7 +59,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsHolder> {
         private TextView dTvUrlToImage;
         private TextView dTvPublishedAt;
         private TextView dTvContent;
-        private TextView dTvSource;
 
         public NewsHolder(@NonNull View itemView) {
 
@@ -73,7 +71,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsHolder> {
             dTvUrlToImage = itemView.findViewById(R.id.tv_url_to_image);
             dTvPublishedAt = itemView.findViewById(R.id.tv_published_at);
             dTvContent = itemView.findViewById(R.id.tv_content);
-            dTvSource = itemView.findViewById(R.id.tv_source);
         }
     }
 }
